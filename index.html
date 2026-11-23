@@ -118,7 +118,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
 .elders .amp{font-family:var(--script);font-size:34px;line-height:1;color:var(--gold)}
 .union{display:flex;flex-direction:column;align-items:center;gap:6px}
 .union-name{font-family:var(--display);font-size:clamp(19px,5.4vw,28px);letter-spacing:.05em;text-transform:uppercase;color:var(--maroon);line-height:1.3}
-.union-name-chi{font-family:var(--display);font-size:clamp(10px,5.4vw,28px);letter-spacing:.05em;text-transform:uppercase;color:var(--maroon);line-height:1.3}
+.union-name-chi{display:flex;align-items:baseline;justify-content:center;gap:7px;white-space:nowrap;font-family:var(--display);letter-spacing:.05em;text-transform:uppercase;color:var(--maroon);line-height:1.3}.chi-prefix{font-size:clamp(8px,2.5vw,11px);letter-spacing:.02em;flex:none}.union-person{font-size:clamp(19px,5.4vw,28px);letter-spacing:.05em}
 .union-weds{font-family:var(--script);font-size:34px;line-height:1.1;color:var(--gold)}
 .union-sub{font-style:italic;color:var(--muted);max-width:30ch;text-wrap:balance}
 
@@ -303,10 +303,10 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
     <svg class="divider" viewBox="0 0 200 24" aria-hidden="true"><path d="M0 12h70M130 12h70" stroke="currentColor" stroke-width="1" opacity=".6" fill="none"/><path d="M100 2l10 10-10 10-10-10z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="100" cy="12" r="2.2" fill="currentColor"/><circle cx="80" cy="12" r="2" fill="currentColor"/><circle cx="120" cy="12" r="2" fill="currentColor"/></svg>
     <p class="lead">We cordially solicit your blessings and request the pleasure of your gracious presence, along with your family, on the auspicious occasion of the wedding ceremony of our beloved only son</p>
     <div class="union">
-      <p class="union-name-chi">Chi. <p class="union-name">Bhavesh</p></p>
+      <div class="union-name-chi"><span class="chi-prefix">Chi.</span><span class="union-person">Bhavesh</span></div>
       <p class="union-sub">S/o Late Shri Balraj B. Sirsulla &amp; Late Smt. Jamuna B. Sirsulla</p>
       <p class="union-weds">weds</p>
-      <p class="union-name-chi">Chi. La. Sow. <p class="union-name">Divya</p></p>
+      <div class="union-name-chi"><span class="chi-prefix">Chi. La. Sow.</span><span class="union-person">Divya</span></div>
       <p class="union-sub">Daughter of Shri Venkatesh A. Alwal &amp; Smt. Kavita V. Alwal</p>
     </div>
   </section>
